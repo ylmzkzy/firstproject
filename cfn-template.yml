@@ -7,14 +7,14 @@ Resources:
     Properties:
       ImageId: ami-0d5eff06f840b45e9 # ImageID valid only in us-east-1 region
       InstanceType: t2.micro
-      KeyName: norht
+      KeyName: north
       SecurityGroupIds:
         - !Ref WebAppSecurityGroup
       Tags:
         - Key: Name
           Value: My EC2 Instance
         - Key: Owner
-          Value: NORHT
+          Value: NOrth
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
